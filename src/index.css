@@ -137,14 +137,16 @@ main{
   flex-wrap: wrap;
 }
 .contenidoAMERICANINO {
-  width: -10%; 
-  margin: 20px;
-  border: groove 4px rgb(73, 73, 73);
-  background-color: rgb(255, 255, 255);
+  margin: 24px;
+  background-color: aliceblue;
+  border: outset 4px;
+  border-radius: 5%;
 }
 .imagenRopaAMERICANINO {
-  width: 15vw;
-  height: auto;
+  width: 198.750px;
+  height: 233.281px;
+  border-radius: 5%;
+  display: block;
   border: outset 2px;
 }
 .comprarAMERCANINO {
@@ -152,6 +154,10 @@ main{
   margin-bottom: 3%;
   width:70%;
   margin-left:15%;
+  color: #e4e3e3;
+  font-size: 102%;
+  background-color: #000;
+  border-radius: 0.25rem;
 }
 
   /*MOTHERCARE*/
@@ -210,21 +216,27 @@ main{
 justify-content: space-evenly;
 }
 .contenidomotherCare  {
-  width: -10%; 
-  margin: 19px;
-  border: groove 4px rgb(202, 196, 196);
-  background-color: rgb(255, 255, 255);
+  margin: 24px;
+  background-color: aliceblue;
+  border: outset 4px;
+  border-radius: 5%;
 } 
 .imagenRopamotherCare {
-  height: 278.250px ;
   width: 198.750px;
-  border: outset 2px;
+  height: 233.281px;
+  border-radius: 5%;
+  display: block;
+  border: outset 4px;
 }
 .comprarmotherCare {
   margin-top:5%;
   margin-bottom: 3%;
   width:70%;
   margin-left:15%;
+  color: #e4e3e3;
+  font-size: 102%;
+  background-color: #000;
+  border-radius: 0.25rem;
 }
 
 /*NAF NAF*/
@@ -266,21 +278,27 @@ justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .contenidonafNaf  {
-  width: -10%; 
-  margin: 20px;
-  border: groove 4px rgb(0, 0, 0);
+  margin: 24px;
   background-color: aliceblue;
+  border: outset 4px;
+  border-radius: 5%;
 } 
 .imagenRopanafNaf {
   width: 198.750px;
-  height:260.750px;
-  border: outset 2px;
+  height: 233.281px;
+  border-radius: 5%;
+  display: block;
+  border: outset 4px;
 }
 .comprarnafNaf {
   margin-top:5%;
   margin-bottom: 3%;
   width:70%;
   margin-left:15%;
+  color: #e4e3e3;
+  font-size: 102%;
+  background-color: #000;
+  border-radius: 0.25rem;
 }
 
 /*CHEVIGNON*/
@@ -326,11 +344,13 @@ justify-content: space-evenly;
   width: 198.750px;
   height: 233.281px;
   border-radius: 5%;
+  display: block;
+  border: outset 4px;
 }
 .contenidochevignon  {
   margin: 24px;
   background-color: aliceblue;
-  border: outset;
+  border: outset 4px;
   border-radius: 5%;
 } 
 .Ropaschevignon { 
