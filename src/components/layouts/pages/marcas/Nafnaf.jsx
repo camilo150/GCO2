@@ -11,9 +11,10 @@ function Nafnaf() {
     <h1>GCO</h1>
 </Link>
 
-</header>
+</header><Head/>
+
     <main id="mainNafnaf">
-      <Head/>
+      
     <img style={{ width: "100%", marginTop: "10%" }} src="src/assets/img/Portadas/naf_naf_inicio.png" alt="" />
 <section id="nafNaf">
   <section className="RopasnafNaf">

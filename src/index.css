@@ -6,82 +6,48 @@
 }
   /*CARRUSEL*/
 .carousel {
-  display: block;
-  overflow: hidden;
-  width: 100%;
-  position: absolute;
-  top: 30%;
-  left: 3%;
-  }
-  .carousel-img {
-    display: block;
-    width: 50vw;
-    height: 60vh;
-    position: relative;
-    top: -23%;
-    left: -10%;
-  }
-  .active {
-    display: block;
-  }
-.carousel-btn {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  font-size: 24px;
-  background: none;
-  border: none;
-  color: rgb(0, 0, 0);
-  justify-content: space-between;
-}
-.prev {
-  left: 15%;
-}
-.next {
-  right: 5%;
-}
-.carousel a{
+  display: flex;
   position: relative;
-  overflow: hidden;
-  top: 15%;
-  left: 29%;
-}
+  left: 5%;
+  width: 90%;
+  margin-top: 10.5%;
+  }
+  .carouselImg {
+    width: 100%;
+    height: 75vh;
+    position: relative;
+    top: 50%;
+  }
 /*Header*/
 .cabeza{
   width: 100%;
-  height: 12%;
+  height: 10%;
   z-index: 2;
   border-bottom: 2px solid #000;
-  background-color: rgb(255, 255, 255);
+  background-color: #f9e4f8;
   position: fixed;
   display: flex;
-  align-items: center;
-  margin: 0;
+
+
 }
 .logo{
   display: flex;
   position: relative;
   top:1%;
-  left: 45%;
-  font-size: 200%;
+  left: 47%;
+  font-size: 150%;
   text-align: center;
   color: rgb(67, 41, 92); 
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }  
 
 /*MARCAS*/
-main{
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(90deg, #c2e9fb 1%, #a1c4fd 100%);
-}
+
 .listaMarcas{
   background-color: rgb(255, 255, 255);
   position: absolute;
-  top: 12%;
-  height: 9vh;
+  top: 10%;
+  height: 10vh;
   width: 100%;
   flex-direction: row;
   justify-content: space-evenly;
@@ -102,7 +68,7 @@ main{
 }  
 .cabezaAmericanino{
   width: 100%;
-  height: 12%;
+  height: 10%;
   z-index: 2;
   border-bottom: 2px solid #000;
   background-color: rgb(0, 0, 0);
@@ -114,8 +80,8 @@ main{
   display: flex;
   position: relative;
   top:1%;
-  left: 44%;
-  font-size: 200%;
+  left: 47%;
+  font-size: 150%;
   text-align: center;
   color: rgb(255, 255, 255); 
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -155,9 +121,14 @@ main{
 }
 
   /*MOTHERCARE*/
+  #mainMothercare{
+  
+
+ background-color: #c5d4ed;
+  }
   .cabezaMothercare{
     width: 100%;
-    height: 12%;
+    height: 10%;
     z-index: 2;
     border-bottom: 2px solid #000;
     background-color: #c2e9fb;
@@ -169,8 +140,8 @@ main{
     display: flex;
     position: relative;
     top:1%;
-    left: 44%;
-    font-size: 200%;
+    left: 47%;
+    font-size: 150%;
     text-align: center;
     color: rgb(0, 0, 0); 
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -182,11 +153,13 @@ main{
   position: sticky;
   display: flex;
   align-items: center;
-  height: 15vh;
+  height: 11vh;
   width: 100%;
   top: 0px;  
   border-bottom: solid 2px black;
-  background-image: linear-gradient(90deg, #c2e9fb 1%, #a0c4fd 63% 1%) 100%;
+  border-top: solid 2px black;
+  background-image:(90deg, #c2e9fb 0%, #a0c4fd 63% 0%) 100%;;
+
   }
 #contenidoTituloMothercare{
   display: flex;
@@ -197,6 +170,7 @@ main{
   font-family: Arial, Helvetica, sans-serif;
 }
 #motherCare{
+  
   display: flex;
   height: 100%;
   width: 100%;
@@ -230,7 +204,7 @@ justify-content: space-evenly;
 /*NAF NAF*/
 .cabezaNafnaf{
   width: 100%;
-  height: 12%;
+  height: 10%;
   z-index: 2;
   border-bottom: 2px solid #000;
   background-color: #2d445e;
@@ -242,10 +216,10 @@ justify-content: space-evenly;
   display: flex;
   position: relative;
   top:1%;
-  left: 44%;
-  font-size: 200%;
+  left: 47%;
+  font-size: 150%;
   text-align: center;
-  color: rgb(255, 255, 255); 
+  color: rgb(255, 255, 255);
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }  
 #mainNafnaf{
@@ -290,17 +264,13 @@ justify-content: space-evenly;
   
 }
 #mainChevignon{
-  height: 100%;
-  width: 100%;
-}
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,0.7372198879551821) 0%, rgba(232,231,231,0) 100%);}
 #tituloChevignon{
 width: 100%;
-margin-top: 17%;
+margin-top: 9.8%;
 background-color: rgb(255, 255, 255);
-z-index: 2;
 font-family:'Times New Roman', Times, serif;
-position: sticky;
-top: 0;
 display: flex;
 justify-content: center;
 border-bottom: solid 5px rgb(0, 0, 0);
@@ -310,9 +280,10 @@ border-top:solid 5px rgb(0, 0, 0) ;
 #contenidoTituloChevignon{
   background-color: rgb(255, 255, 255);
   font-size: 500%;
+  
 }
 #mainChevignon{
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%);
+  border-bottom: solid 2px black; 
 }
 #chevignon{
 display: flex;

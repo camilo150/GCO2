@@ -10,7 +10,6 @@ function Chevignon() {
         
         <Link className="logo" to="/">
         <h1>GCO</h1>
-    
          </Link> 
          
 </header>
@@ -20,7 +19,7 @@ function Chevignon() {
         <section id="tituloChevignon">
         <h1 id="contenidoTituloChevignon">CHEVIGNON</h1>
             </section>
-            <img src="src/assets/img/Portadas/chevignonPresentacion.png" style={{width:"100%",}} alt="chevignon portada" />
+            <img src="src/assets/img/Portadas/chevignonPresentacion.png" style={{width:"100%",borderBottom:" solid 4px black"}} alt="chevignon portada" />
    
     <section id="chevignon">
         <section className="Ropaschevignon">

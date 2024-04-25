@@ -15,10 +15,10 @@ function Mothercare() {
       </header>
       <Head />
       <main id="mainMothercare">
-        <img src="/src/assets/img/mama_bebe_motherCare.jpg" style={{ width: '100%', borderBottom: 'solid 2px black', marginTop: '9.5%' }} alt="" />
-        <Link id="tituloMothercare">
+        <img src="/src/assets/img/Portadas/mama_bebe_motherCare.jpg" style={{ width: '100%', borderBottom: 'solid 2px black', marginTop: '9.5%' }} alt="" />
+        <div id="tituloMothercare">
           <h1 id="contenidoTituloMothercare">mothercare</h1>
-        </Link>
+        </div>
         <section id="motherCare" />
         <section className="RopasmotherCare">
           <div className="contenidomotherCare">
