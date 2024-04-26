@@ -10,13 +10,14 @@ function Inicio() {
         <Link className="logo" to="/">
           <h1>GCO</h1>
         </Link>
-      </header>
+      </header>  
       <main className="contenido">
-       <Head></Head>
-       <Carrusel></Carrusel>
+        <Head></Head>
+        <Carrusel></Carrusel>
+     <Foother/>
       </main>
       
-      <Foother/>
+      
       
     </>
   );

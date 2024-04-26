@@ -11,7 +11,7 @@ function Head() {
                 <img className="marca" src="/src/assets/img/Portadas/mother_care.png" alt="mother care"/>
             </Link>
 
-            <Link className="marca" to="/Naf-naf">
+            <Link className="marca" to="/Nafnaf">
                 <img className="marca" src="/src/assets/img/Portadas/naf_naf.png" alt="naf naf"/>
             </Link>
 
