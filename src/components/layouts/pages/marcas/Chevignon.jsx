@@ -40,12 +40,11 @@ function Chevignon() {
       <main id='main'style={{backgroundImage: 'linear-gradient(0deg, rgba(9, 8, 8, 0.83) 0%, #d0cfcf 77%)',}}>
       <section id="tituloChevignon">
         <h1 id="contenidoTituloChevignon">CHEVIGNON</h1>
-            </section>
-            <img src="src/assets/img/Portadas/chevignonPresentacion.png" style={{width:"100%",}} alt="chevignon portada" />
-        <section id="Secciones">
-        
-          <section className="Ropas" >
-            {productos.map((producto, index) => (
+       </section>
+          <img src="src/assets/img/Portadas/chevignonPresentacion.png" style={{width:"100%",}} alt="chevignon portada" />
+        <section>
+         <section className="Ropas" >
+              {productos.map((producto, index) => (
               <ProductItem key={index} imageUrl={producto.imageUrl} />
             ))}
           </section>

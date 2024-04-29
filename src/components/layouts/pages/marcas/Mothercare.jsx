@@ -38,7 +38,7 @@ function Mothercare() {
       </header>
       <Head />
       <main id='main' style={{backgroundImage:"linear-gradient(90deg, #c2e9fb 1%, #a1c4fd 100%)"}}>
-        <section id="Secciones">
+        <section>
         <img src="/src/assets/img/Portadas/mama_bebe_motherCare.jpg" style={{ width: '100%', borderBottom: 'solid 2px black', marginTop: '9.5%' }} alt="" />
           <section className="Ropas">
             {productos.map((producto, index) => (

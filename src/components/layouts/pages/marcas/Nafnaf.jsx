@@ -38,8 +38,9 @@ function Nafnaf() {
         <Carro></Carro>
       </header>
       <Head />
+      
       <main id='Secciones' style={{ backgroundImage: "linear-gradient(0deg, #b8b8b8 0%, #182848 50%)"}}>
-        <section id="CHEVIGNON">
+        <section >
         <img style={{ width: "100%", marginTop: "10%" }} src="src/assets/img/Portadas/naf_naf_inicio.png" alt="" />
           <section className="Ropas">
             {productos.map((producto, index) => (

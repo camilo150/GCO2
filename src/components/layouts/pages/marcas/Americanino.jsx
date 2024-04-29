@@ -36,7 +36,7 @@ function Americanino() {
       </header>
       <Head />
       <main id='main' style={{backgroundImage: 'linear-gradient(0deg, #5d6a7d 9%, rgba(28, 61, 126, 0.96) 49%)',border:"soild 2px black"}}>
-        <section id="Secciones">
+        <section >
         <img style={{ width: "100%", marginTop: "9.5%" ,borderBottom:"solid 4px black",borderTop:"solid 5px"}} src="src/assets/img/Portadas/americaninoPortada.png" alt="" />
           <section className="Ropas">
             {productos.map((producto, index) => (
