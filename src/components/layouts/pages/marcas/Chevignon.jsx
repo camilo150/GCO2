@@ -198,10 +198,3 @@ function Chevignon() {
   );
 }
 export default Chevignon;
-        </section>
-      </main>
-      <Foother />
-    </>
-  );
-}
-export default Chevignon;
