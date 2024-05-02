@@ -133,6 +133,40 @@ function Chevignon() {
     sexo: 'Masculino',
     imageUrl: 'src/assets/img/prendas_Chevignon/zapato_blanco_chevignon.jpg'
   },
+  
+  {
+    nombre: 'zapato blanco',
+    marca: "Chevignon",
+    tipoPrenda: 'zapato ',
+    precio:80000,
+    sexo: 'Masculino',
+    imageUrl: 'src/assets/img/prendas_Chevignon/zapato_blanco_con_negro_chevignon.jpg'
+  },
+  {
+    nombre: 'buzo rosado',
+    marca: "Chevignon",
+    tipoPrenda: 'buzo ',
+    precio:100000,
+    sexo: 'Femenino',
+    imageUrl: 'src/assets/img/prendas_Chevignon/buzoMujer_chevignon.jpeg'
+  },
+  {
+    nombre: 'camiseta negra',
+    marca: "Chevignon",
+    tipoPrenda: 'camiseta ',
+    precio:80000,
+    sexo: 'Masculino',
+    imageUrl: 'src/assets/img/prendas_Chevignon/camiseta_Negra_chevignon.jpg'
+  },
+  {
+    nombre: 'camiseta gris con negro',
+    marca: "Chevignon",
+    tipoPrenda: 'camiseta ',
+    precio:80000,
+    sexo: 'Masculino',
+    imageUrl: 'src/assets/img/prendas_Chevignon/Camiseta_NegraGris_chevignon.jpg'
+  },
+  
   ]
   return (
     <>
@@ -157,6 +191,13 @@ function Chevignon() {
                precio={productos.precio}/>
             ))}
           </section>
+        </section>
+      </main>
+      <Foother />
+    </>
+  );
+}
+export default Chevignon;
         </section>
       </main>
       <Foother />
