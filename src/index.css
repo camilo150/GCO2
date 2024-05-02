@@ -233,6 +233,13 @@ body {
   background-color: #000;
   border-radius: 0.25rem;
 }
+.textoInfo{
+  font-size:  2%rem;
+  margin-bottom: 2%;
+  font-style:oblique;
+color:rgb(0, 0, 0);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .contenido{
   margin-left:0.6%;
   margin-top: 2%;
@@ -240,11 +247,7 @@ body {
   border-radius: 5%;
   display: block;
   background-color: #e0e0e0;
-}
-#carrito{
-  height: 80%;
-  position: relative;
-  left: 85%;
+  padding: 2%;
 }
 .botonVermas
 {
@@ -263,5 +266,9 @@ font-family:Arial, Helvetica, sans-serif;
 .botonVermas:hover{
   background-color: gold;
   transition: 1s;
+  cursor: pointer;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.comprar:hover{
+cursor:pointer;
 }
