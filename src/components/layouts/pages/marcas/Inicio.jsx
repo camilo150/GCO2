@@ -20,6 +20,8 @@ function Inicio() {
           <div className="contenido">
             <div className="contenedor"></div>
             <img className="imagenRopa" src="src/assets/img/prendas_nafnaf/camiseta_negra_mujer_nafnaf.png" alt=""   />
+            <div className='textoInfo'>camisa negra</div>
+            <div className='textoInfo'>$315000 </div>
             <Link to={"/Nafnaf"}>
             <input className='botonVermas'  type="button" value="¡VER MÁS!"/>
            </Link>
@@ -28,6 +30,8 @@ function Inicio() {
           <div className="contenido">
             <div className="contenedor"></div>
             <img className="imagenRopa" src="/src/assets/img/prendas_americanino/camisa_negra_americanino.jpg" alt="" />
+            <div className='textoInfo'>camiseta negra</div>
+            <div className='textoInfo'>$80000</div>
             <Link to={"/Americanino"}>
             <input className='botonVermas'  type="button" value="¡VER MÁS!" />
           </Link>
@@ -36,6 +40,8 @@ function Inicio() {
           <div className="contenido">
             <div className="contenedor"></div>
             <img className="imagenRopa" src="src/assets/img/prendas_Chevignon/buzo_Azul_chevignon.jpg" alt="" />
+            <div className='textoInfo'>buzo azul</div>
+            <div className='textoInfo'>$800000</div>
             <Link to={"/Chevignon"}>
             <input  className='botonVermas' type="button" value="¡VER MÁS!" />
           </Link>
@@ -44,6 +50,8 @@ function Inicio() {
           <div className="contenido">
             <div className="contenedor"></div>
             <img className="imagenRopa" src="/src/assets/img/prendas_mothercare/coche_naranja.jpg" alt="" />
+            <div className='textoInfo'>coche naranja</div>
+            <div className='textoInfo'>$550000</div>
             <Link to={"/Mothercare"}>
             <input className='botonVermas' type="button" value="¡VER MÁS!" />
           </Link>
