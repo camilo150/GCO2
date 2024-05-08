@@ -4,6 +4,7 @@ import Mothercare from './components/layouts/pages/marcas/Mothercare'
 import Chevignon from './components/layouts/pages/marcas/Chevignon'
 import Nafnaf from './components/layouts/pages/marcas/Nafnaf'
 import Americanino from './components/layouts/pages/marcas/Americanino'
+import InicioSesion from './components/layouts/pages/interfaz/InicioSesion'
 
 let router = createBrowserRouter([
 {
@@ -19,13 +20,17 @@ path: "/Chevignon",
 element:<Chevignon/>,
 },
 {
-  path: "/NafNaf",
-  element:<Nafnaf/>,
-  },
-  {
-    path: "/Americanino",
-    element:<Americanino/>,
-  },
+path: "/NafNaf",
+element:<Nafnaf/>,
+},
+{
+  path: "/Americanino",
+  element:<Americanino/>,
+},
+{
+  path: "verificar",
+  element:<InicioSesion/>
+}
   
 
 

@@ -47,6 +47,9 @@ function Nafnaf() {
             data={nafnafProducts} // Pasa los productos de Nafnaf como prop
           /> 
         </section>
+       <Link to={"/verificar"}>
+       <button> adad</button>
+       </Link>
       </main>
       <Foother />
     </>
