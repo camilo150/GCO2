@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Foother from "../interfaz/Foother";
-import { data } from '../../../database/data'; // Importa los datos de productos
+import { data } from '../../../database/data';
 import { Cabezon } from '../interfaz/Cabezon';
 import { ProductList } from '../interfaz/ProductList';
 import Head from '../interfaz/Head';
@@ -13,10 +13,10 @@ function Mothercare() {
   const [mothercareProducts, setMothercareProducts] = useState([]);
 
   useEffect(() => {
-    // Filtrar los productos de Mothercare
+  
     const filteredProducts = data.filter(product => product.marca === 'Mothercare');
     setMothercareProducts(filteredProducts);
-  }, []); // La dependencia vacía asegura que este efecto solo se ejecute una vez
+  }, []); 
 
   return (
     <>
@@ -43,7 +43,7 @@ function Mothercare() {
             setTotal={setTotal}
             countProducts={countProducts}
             setCountProducts={setCountProducts}
-            data={mothercareProducts} // Pasa los productos de Mothercare como prop
+            data={mothercareProducts} 
           /> 
       </main>
       <Foother />

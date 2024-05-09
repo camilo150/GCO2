@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 	export const Cabezon = ({
 		allProducts,
 		setAllProducts,
@@ -7,10 +7,11 @@ import { useState } from 'react';
 		countProducts,
 		setCountProducts,
 		setTotal,
+		
 	}) => {
 		const [active, setActive] = useState(false);
 
-		const onDeleteProduct = product => {
+	 	const onDeleteProduct = product => {
 			const results = allProducts.filter(
 				item => item.id !== product.id
 			);
@@ -25,7 +26,7 @@ import { useState } from 'react';
 			setTotal(0);
 			setCountProducts(0);
 		};
-
+		
 	return (
 		<header>
 			<div className='container-icon'>
@@ -65,7 +66,9 @@ import { useState } from 'react';
 										<div className='info-cart-product'>
 											<span className='cantidad-producto-carrito'>
 												{product.quantity}
+												
 											</span>
+											<img className='imagen-carrito' src={product.imageUrl} alt="" />
 											<p className='titulo-producto-carrito'>
 												{product.nameProduct}
 											</p>
@@ -100,6 +103,17 @@ import { useState } from 'react';
 							<button className='btn-clear-all' onClick={onCleanCart}>
 								Vaciar Carrito
 							</button>
+							
+							<Link to={{
+								pathname: "/login",
+								state: { allProducts: allProducts, total: total }
+								}}>
+								<button className="btn-clear-all">
+									Comprar
+								</button>
+							</Link>
+
+
 						</>
 					) : (
 						<p className='cart-empty'>El carrito está vacío</p>

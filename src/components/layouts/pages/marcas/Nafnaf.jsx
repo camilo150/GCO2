@@ -13,10 +13,10 @@ function Nafnaf() {
   const [nafnafProducts, setNafnafProducts] = useState([]);
 
   useEffect(() => {
-    // Filtrar los productos de Nafnaf
+
     const filteredProducts = data.filter(product => product.marca === 'NafNaf');
     setNafnafProducts(filteredProducts);
-  }, []); // La dependencia vacía asegura que este efecto solo se ejecute una vez
+  }, []); 
 
   return (
     <>
@@ -44,7 +44,7 @@ function Nafnaf() {
             setTotal={setTotal}
             countProducts={countProducts}
             setCountProducts={setCountProducts}
-            data={nafnafProducts} // Pasa los productos de Nafnaf como prop
+            data={nafnafProducts} 
           /> 
         </section>
       </main>

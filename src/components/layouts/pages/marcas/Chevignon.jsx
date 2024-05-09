@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Foother from "../interfaz/Foother";
 import Head from "../interfaz/Head";
-import { data } from '../../../database/data'; // Importa los datos de productos
+import { data } from '../../../database/data'; 
 import { Cabezon } from '../interfaz/Cabezon';
 import { ProductList } from '../interfaz/ProductList';
 
@@ -13,10 +13,10 @@ function Chevignon() {
   const [chevignonProducts, setChevignonProducts] = useState([]);
 
   useEffect(() => {
-    // Filtrar los productos de Chevignon
+
     const filteredProducts = data.filter(product => product.marca === 'Chevignon');
     setChevignonProducts(filteredProducts);
-  }, []); // La dependencia vacía asegura que este efecto solo se ejecute una vez
+  }, []); 
 
   return (
     <>
@@ -47,7 +47,7 @@ function Chevignon() {
             setTotal={setTotal}
             countProducts={countProducts}
             setCountProducts={setCountProducts}
-            data={chevignonProducts} // Pasa los productos de Chevignon como prop
+            data={chevignonProducts} 
           /> 
         </section>
       </main>

@@ -31,6 +31,9 @@ export const ProductList = ({
 		setCountProducts(countProducts + product.quantity);
 		setAllProducts([...allProducts, product]);
 	};
+	const enCarrito =()=>{
+		const enCarrito=onAddProduct
+	}
 
 	return (
 		<div className='container-items'>

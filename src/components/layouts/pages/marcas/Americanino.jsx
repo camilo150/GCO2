@@ -5,7 +5,6 @@ import Head from "../interfaz/Head";
 import { ProductList } from '../interfaz/ProductList';
 import { Cabezon } from '../interfaz/Cabezon';
 import { data } from '../../../database/data';
-
 function Americanino() {
   const [allProducts, setAllProducts] = useState([]);
   const [total, setTotal] = useState(0);
@@ -13,17 +12,16 @@ function Americanino() {
   const [americaninoProducts, setAmericaninoProducts] = useState([]);
 
   useEffect(() => {
-    // Filtrar los productos de Americanino
     const filteredProducts = data.filter(product => product.marca === 'Americanino');
     setAmericaninoProducts(filteredProducts);
-  }, []); // La dependencia vacía asegura que este efecto solo se ejecute una vez
-
+  }, []);
   return (
     <>
       <header className="cabezaAmericanino">
         <Link className="logoAmericanino" to="/">
           <h1>GCO</h1> 
         </Link>
+    
         <Cabezon
           allProducts={allProducts}
           setAllProducts={setAllProducts}
@@ -43,7 +41,7 @@ function Americanino() {
           setTotal={setTotal}
           countProducts={countProducts}
           setCountProducts={setCountProducts}
-          data={americaninoProducts} // Pasa los productos de Americanino como prop
+          data={americaninoProducts} 
         />
       </main>
       <Foother />
