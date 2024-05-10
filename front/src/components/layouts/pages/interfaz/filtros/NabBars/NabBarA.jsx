@@ -6,22 +6,22 @@ const product = [
     {
         nameProduct: 'Camisas',
         imageUrl: "/src/assets/img/prendas_americanino/camisa_negra_americanino.jpg",
-        link: "/Americanino-Camisas"
+        link: "/Americanino-camisa"
     },
     {
         nameProduct: 'Camisetas',
         imageUrl: '/src/assets/img/prendas_americanino/camiseta_verde-militar_americanino.webp',
-        link: "/Americanino-Camisetas"
+        link: "/Americanino-camiseta"
     },
     {
         nameProduct: 'Gorras',
         imageUrl: '/src/assets/img/prendas_americanino/gorra_blanca_americanino.jpg',
-        link: "/Americanino-Gorras"
+        link: "/Americanino-gorra"
     },
     {
         nameProduct: "Medias",
         imageUrl: "/src/assets/img/prendas_americanino/medias_azules_americanino.jpg",
-        link: "/Americanino-Medias"
+        link: "/Americanino-medias"
     },
 ]
 

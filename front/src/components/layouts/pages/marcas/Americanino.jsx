@@ -13,11 +13,9 @@ function Americanino() {
   const [americaninoProducts, setAmericaninoProducts] = useState([]);
 
   useEffect(() => {
-    // Filtrar los productos de Americanino
     const filteredProducts = data.filter(product => product.marca === 'Americanino');
     setAmericaninoProducts(filteredProducts);
-  }, []); // La dependencia vacía asegura que este efecto solo se ejecute una vez
-
+  }, []); 
   return (
     <>
       <header className="cabezaAmericanino">

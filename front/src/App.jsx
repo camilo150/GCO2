@@ -26,8 +26,9 @@ import ChevignonBuzos from './components/layouts/pages/interfaz/filtros/Categori
 import ChevignonCamisas from './components/layouts/pages/interfaz/filtros/Categories/Chevignon/ChevignonCamisas'
 import ChevignonChaquetas from './components/layouts/pages/interfaz/filtros/Categories/Chevignon/ChevignonChaquetas'
 import ChevignonPantalones from './components/layouts/pages/interfaz/filtros/Categories/Chevignon/ChevignonPantalones'
-import Login from './components/auth/Login'
-import Registro from './components/auth/Registro'
+import Login from './components/layouts/pages/interfaz/auth/Login'
+import Registro from './components/layouts/pages/interfaz/auth/Registro'
+import Compras from './components/layouts/pages/interfaz/Compras'
 
 let router = createBrowserRouter([
   {
@@ -75,76 +76,80 @@ let router = createBrowserRouter([
     element: <FiltroChevignon />,
   },
   {
-    path: "Americanino-Camisas",
+    path: "Americanino-camisa",
     element: <AmericaninoCamisas />,
   },
   {
-    path: "Americanino-Camisetas",
+    path: "Americanino-camiseta",
     element: <AmericaninoCamisetas />,
   },
   {
-    path: "Americanino-Gorras",
+    path: "Americanino-gorra",
     element: <AmericaninoGorras />,
   },
   {
-    path: "Americanino-Medias",
+    path: "Americanino-medias",
     element: <AmericaninoMedias />
   },
   {
-    path: "Mothercare-Coches",
+    path: "Mothercare-coche",
     element: <MotherCareCoches />
   },
   {
-    path: "Mothercare-CochesDobles",
+    path: "Mothercare-coche-doble",
     element: <MotherCareCochesDobles />
   },
   {
-    path: "Mothercare-Cunas",
+    path: "Mothercare-cuna",
     element: <MotherCareCunas />
   },
   {
-    path: "Mothercare-Sillas",
+    path: "Mothercare-silla",
     element: <MotherCareSillas />
   },
   {
-    path: "Nafnaf-Abrigos",
+    path: "NafNaf-abrigo",
     element: <NafNafAbrigos />
   },
   {
-    path: "Nafnaf-Camisas",
+    path: "NafNaf-camisa",
     element: <NafNafCamisas />
   },
   {
-    path: "Nafnaf-Camisetas",
+    path: "Nafnaf-camiseta",
     element: <NafNafCamisetas />
   },
   {
-    path: "Nafnaf-Enterizos",
+    path: "NafNaf-enterizo",
     element: <NafNafEnterizos />
   },
   {
-    path: "Nafnaf-Pantalones",
+    path: "NafNaf-pantalon",
     element: <NafNafPantalones />
   },
   {
-    path: "Nafnaf-Zapatos",
+    path: "NafNaf-zapato",
     element: <NafNafZapatos />
   },
   {
-    path: "Chevignon-Buzos",
+    path: "Chevignon-buzo",
     element: <ChevignonBuzos />
   },
   {
-    path: "Chevignon-Camisas",
+    path: "Chevignon-camisa",
     element: <ChevignonCamisas />
   },
   {
-    path: "Chevignon-Chaquetas",
+    path: "Chevignon-chaqueta",
     element: <ChevignonChaquetas />
   },
   {
-    path: "Chevignon-Pantalones",
+    path: "Chevignon-pantalon",
     element: <ChevignonPantalones />
+  },
+  {
+    path:"Compras",
+    element:<Compras/>
   }
 ])
 

@@ -1,4 +1,4 @@
-import userLogo from "../../assets/img/iconos/logogco.jpg"
+import userLogo from "../../../../../assets/img/Portadas/logogco.jpg"
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
@@ -59,7 +59,7 @@ const Login = () => {
   return (
     <body className="login">
       <h1 className='login-logo'>GCO</h1>
-      <h1 className='login-anuncio'>Inicia sesion para poder comprar!</h1>
+      <h1 className='login-anuncio'>Inicia sesion para poder comprar y disfrutar de nustras marcas!</h1>
 
       <form className="logo-formulario-contenedor">
         <img src={userLogo} alt="Usuario" className="icon" />
@@ -99,7 +99,7 @@ const Login = () => {
           Iniciar sesión
         </button>
         <button onClick={registrarUsuario} type="button" className="login-boton-b">
-          Registrar usuario
+          Crea un usuario, es gratis!
         </button>
       </form>
     </body>

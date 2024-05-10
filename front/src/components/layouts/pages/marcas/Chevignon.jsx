@@ -13,11 +13,9 @@ function Chevignon() {
   const [chevignonProducts, setChevignonProducts] = useState([]);
 
   useEffect(() => {
-    // Filtrar los productos de Chevignon
     const filteredProducts = data.filter(product => product.marca === 'Chevignon');
     setChevignonProducts(filteredProducts);
-  }, []); // La dependencia vacía asegura que este efecto solo se ejecute una vez
-
+  }, []);
   return (
     <>
       <header className="cabezaChevignon">
@@ -39,7 +37,7 @@ function Chevignon() {
           <h1 id="contenidoTituloChevignon">CHEVIGNON</h1>
         </section>
         <img src="src/assets/img/Portadas/chevignonPresentacion.png" style={{width:"100%",}} alt="chevignon portada" />
-        <section className="Ropas">
+        <section>
           <ProductList
             allProducts={allProducts}
             setAllProducts={setAllProducts}

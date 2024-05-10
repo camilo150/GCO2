@@ -13,11 +13,9 @@ function Mothercare() {
   const [mothercareProducts, setMothercareProducts] = useState([]);
 
   useEffect(() => {
-    // Filtrar los productos de Mothercare
     const filteredProducts = data.filter(product => product.marca === 'Mothercare');
     setMothercareProducts(filteredProducts);
-  }, []); // La dependencia vacía asegura que este efecto solo se ejecute una vez
-
+  }, []); 
   return (
     <>
       <header className="cabezaMothercare">
@@ -43,8 +41,7 @@ function Mothercare() {
             setTotal={setTotal}
             countProducts={countProducts}
             setCountProducts={setCountProducts}
-            data={mothercareProducts} // Pasa los productos de Mothercare como prop
-          /> 
+            data={mothercareProducts} /> 
       </main>
       <Foother />
     </>

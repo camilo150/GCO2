@@ -244,9 +244,7 @@ img {
 header {
   display: flex;
   justify-content: space-between;
-
 }
-
 .container-icon {
   position: relative;
 }
@@ -273,7 +271,6 @@ header {
   position: absolute;
   top: 50px;
   right: 0;
-
   background-color: #fff;
   width: 400px;
   z-index: 1;
@@ -286,7 +283,6 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 30px;
-
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -294,21 +290,27 @@ header {
   display: flex;
   justify-content: space-between;
   flex: 0.8;
+  
 }
 
 .titulo-producto-carrito {
   font-size: 20px;
+  margin-left: 4%;
+  margin-top: 10%;
 }
 
 .precio-producto-carrito {
   font-weight: 700;
   font-size: 20px;
   margin-left: 10px;
+  margin-top: 15%;
 }
 
 .cantidad-producto-carrito {
   font-weight: 400;
   font-size: 20px;
+  margin-top: 15%;
+  margin-right: 2%;
 }
 
 .icon-close {
@@ -405,7 +407,7 @@ header {
   background: none;
   background-color: #000;
   color: #fff;
-  padding: 10px 15px;
+  padding: 2px 2px;
   cursor: pointer;
   text-align: center;
   border-radius: 2%;
@@ -423,7 +425,7 @@ header {
 .btn-clear-all {
   border: none;
   background-color: #000;
-  color: #747474;
+  color: white;
   padding: 15px 0;
   display: block;
   width: 100%;
@@ -440,4 +442,118 @@ header {
   background-color: #333;
   transform: scale(1.03);
   border-radius: 0;
+}
+.candado
+{
+  height: 30px;
+  position: relative;
+  top: 25%;
+  left: -50%;
+}
+.candado:hover
+{
+  content: url("src/assets/img/iconos/candado.png");
+}
+.botonVerMas
+{
+  background: none;
+   border: none;
+   background-color: #000;
+   color: white;
+   width:90%;
+   padding-top: 1%;
+   padding-bottom: 1%;
+   cursor: pointer;
+
+}
+.body-compras
+{
+align-items: center;
+display: flex;
+background-color: #a6b8d3;
+}
+.formulario-compra
+{
+  border-radius: 5px;
+  background-color:white ;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2%;
+  width: 50%;
+  padding-top: 5%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .6), 0 8px 16px rgba(6, 6, 6, .6);
+
+}
+.imagen-compra
+{
+  border-radius: 5px;
+  width: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .6), 0 8px 16px rgba(6, 6, 6, .6);
+
+}
+.input-compras-a
+{
+  border: none;
+  text-decoration: none;
+  font-family: "Inter";
+  margin-top: 2%;
+  margin-bottom: 2px;
+  height: 2rem;
+  width: 50%;
+  border-radius: 5px;
+  flex-direction: row;
+  justify-content:space-between;
+  display: flex;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2), 0 8px 16px rgba(6, 6, 6, .6);
+  background-color: #f0f2f5;
+}
+.contenedor-inputs-b
+{
+  position: relative;
+  left: 7.8%;
+}
+.input-compras-b
+{
+  border: none;
+  margin-right: 5%;
+  width: 43%;
+  height: 2rem;
+  border-radius: 5px;
+  margin-top: 6px;
+  position: relative;
+  left: -9.6%;
+  background-color: #f0f2f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2), 0 8px 16px rgba(6, 6, 6, .6);
+
+}
+.boton-compra{
+  width: 40%;
+  border: none;
+  background: none;
+  font-family: Inter;
+  background-color: rgba(12, 77, 12, 0.897);
+  color: white;
+  border-radius: 5px;
+  height: 2rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  cursor: pointer;
+}
+.boton-compra:hover
+{
+  background-color: rgb(66, 196, 94);
+}
+.comprar-anuncio
+{
+text-align: center;
+text-decoration: none;
+font-family:"Inter";
+font-size: 2rem;
+font-weight: 200;
+color: black;
+}
+.imagen-carrito{
+  height: 100px;
+  
 }

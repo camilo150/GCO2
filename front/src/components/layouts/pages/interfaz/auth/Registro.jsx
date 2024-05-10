@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { usuarios } from "../database/dataBase";
+import { usuarios } from "../../../../database/dataBase";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import './Login.css'
@@ -16,10 +16,9 @@ const Registro = () => {
     const buscarUsuario = () => {
         let estado = usuarios.some((usuario) => {
             if (
-                getUsuario === usuario.usuario
-                // &&
-                // getContrasena === usuario.contrasena &&
-                // getCorreo === usuario.correo
+                getUsuario === usuario.usuario &&
+                getContrasena === usuario.contrasena &&
+                getCorreo === usuario.correo
             ) {
                 return true;
             }
@@ -64,7 +63,7 @@ const Registro = () => {
 
 
             <form className="logo-formulario-contenedor2">
-                <h2 className="login-anuncio">Registrar usuario</h2>
+                <h2 className="login-anuncio">Crear usuario nuevo</h2>
                 <div className="input-group">
                     <input className="login-inputs" placeholder="   Usuario"
                         type="text"

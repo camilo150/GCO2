@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 	export const Cabezon = ({
 		allProducts,
@@ -66,6 +67,7 @@ import { useState } from 'react';
 											<span className='cantidad-producto-carrito'>
 												{product.quantity}
 											</span>
+											<img src={product.imageUrl} alt="" className='imagen-carrito' />
 											<p className='titulo-producto-carrito'>
 												{product.nameProduct}
 											</p>
@@ -100,6 +102,9 @@ import { useState } from 'react';
 							<button className='btn-clear-all' onClick={onCleanCart}>
 								Vaciar Carrito
 							</button>
+							<Link to={"/Compras"}>
+							<button className='btn-clear-all'>Comprar</button>
+							</Link>
 						</>
 					) : (
 						<p className='cart-empty'>El carrito está vacío</p>

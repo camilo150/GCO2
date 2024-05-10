@@ -11,9 +11,11 @@ function Inicio() {
         <Link className="logo" to="/home">
           <h1>GCO</h1>
         </Link>
-        <Link to={"/"}>
-                    <button type='button' className='linkIicioImagen' style={{margin: "0 auto",marginTop: "1rem", display: "block", backgroundColor: "#101010"}}>Cerrar Sesión</button>
-                </Link>
+        <Link to={"/"} >
+          <img className='candado' src="src/assets/img/iconos/candado-abierto.png" alt="" />
+          
+           </Link>
+           
       </header>   
 
       <main>

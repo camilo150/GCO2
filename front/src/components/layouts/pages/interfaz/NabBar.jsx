@@ -8,14 +8,14 @@ const product=[
   marca: "NafNaf",
   price: 315000,
   imageUrl: "src/assets/img/prendas_nafnaf/camiseta_negra_mujer_nafnaf.png",
-  link:"/NafNaf"
+  link:"/Filtro-NafNaf"
 },
 {
   nameProduct: 'coche naranja',
   marca: 'Mothercare',
   price: 550000,
   imageUrl: '/src/assets/img/prendas_mothercare/coche_naranja.jpg',
-  link:"/Mothercare"
+  link:"/Filtro-MotherCare"
 },
 {
   nameProduct: 'camisa blanca',
@@ -23,7 +23,7 @@ const product=[
   price: 20000,
   sexo: 'Masculino',
   imageUrl: 'src/assets/img/prendas_Chevignon/camisaBlancaML_chevignon.jpg',
-  link:"/Chevignon"
+  link:"/Filtro-Chevignon"
 },
  { 
   nameProduct: "camisa roja",
@@ -31,7 +31,7 @@ const product=[
   price: 70000,
   sexo: "Femenino",
   imageUrl: "/src/assets/img/prendas_americanino/camisa_roja_mujer_americanino.jpg",
-  link:"/Americanino"
+  link:"/Filtro-Americanino"
 },
 ]
 

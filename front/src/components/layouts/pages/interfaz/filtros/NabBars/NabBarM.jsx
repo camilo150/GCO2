@@ -4,24 +4,24 @@ import { Link } from 'react-router-dom';
 
 const product = [
     {
-        nameProduct: 'Coches',
+        nameProduct: 'coche',
         imageUrl: "/src/assets/img/prendas_mothercare/coche_rojo.jpg",
-        link: "/Mothercare-Coches"
+        link: "/Mothercare-coche"
     },
     {
-        nameProduct: 'Cunas',
+        nameProduct: 'cuna',
         imageUrl: '/src/assets/img/prendas_mothercare/cuna_blanca.jpg',
-        link: "/Mothercare-Cunas"
+        link: "/Mothercare-cuna"
     },
     {
-        nameProduct: 'Sillas',
+        nameProduct: 'silla',
         imageUrl: '/src/assets/img/prendas_mothercare/silla_para_bebe_azul.jpg',
-        link: "/Mothercare-Sillas"
+        link: "/Mothercare-silla"
     },
     {
-        nameProduct: "Coches dobles",
+        nameProduct: "Coche doble",
         imageUrl: "/src/assets/img/prendas_mothercare/coche_doble.jpg",
-        link: "/Mothercare-CochesDobles"
+        link: "/Mothercare-coche-doble"
     },
 ]
 
