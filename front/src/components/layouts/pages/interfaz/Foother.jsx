@@ -10,7 +10,7 @@ function Foother() {
     <div className="contactos">
         <img src="/src/assets/img/iconos/icons8-correo-24.png" alt=""/>
         <Link to="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvlHShkclMXhJMbnjfmCfsJRDRHpWPDwnxDpPZcWlsRtzSHxwlHvJMZTwTHHcLDGSPtLbq"
-            target="_blank">Correo de contacto: camicastrillon2314@gmail.com</Link>
+            target="_blank">Correo de contacto:</Link>
     </div>
     <div className="contactos">
         <img src="/src/assets/img/iconos/icons8-ubicación-64.png" alt=""/>

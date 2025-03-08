@@ -37,7 +37,7 @@ const product = [
 
 const NabBarN = ({ imageUrl }) => {
     return (
-        <section style={{marginTop:"10%"}}>
+        <section style={{ marginTop: "10%" }}>
             <div className='container-items' >
                 {product.map(product => (
                     <div className='item' key={product.marca}>

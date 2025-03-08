@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import GCOIcon from './filtros/GCOIcon';
 	export const Cabezon = ({
 		allProducts,
 		setAllProducts,
@@ -28,7 +28,8 @@ import { Link } from 'react-router-dom';
 		};
 
 	return (
-		<header>
+		<header className='Top'>
+			<GCOIcon></GCOIcon>
 			<div className='container-icon'>
 				<div
 					className='container-cart-icon'
@@ -114,3 +115,4 @@ import { Link } from 'react-router-dom';
 		</header>
 	);
 };
+

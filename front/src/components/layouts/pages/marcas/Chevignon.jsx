@@ -5,6 +5,7 @@ import Head from "../interfaz/Head";
 import { data } from '../../../database/data'; // Importa los datos de productos
 import { Cabezon } from '../interfaz/Cabezon';
 import { ProductList } from '../interfaz/ProductList';
+import ImagenesDePortada from '../interfaz/ImagenesDePortada';
 
 function Chevignon() {
   const [allProducts, setAllProducts] = useState([]);
@@ -19,9 +20,6 @@ function Chevignon() {
   return (
     <>
       <header className="cabezaChevignon">
-        <Link className="logoChevignon" to="/home">
-          <h1>GCO</h1>
-        </Link>
         <Cabezon
           allProducts={allProducts}
           setAllProducts={setAllProducts}
@@ -33,10 +31,7 @@ function Chevignon() {
       </header>
       <Head />
       <main id='main'style={{backgroundImage: 'linear-gradient(0deg, rgba(9, 8, 8, 0.83) 0%, #d0cfcf 77%)',}}>
-        <section id="tituloChevignon">
-          <h1 id="contenidoTituloChevignon">CHEVIGNON</h1>
-        </section>
-        <img src="src/assets/img/Portadas/chevignonPresentacion.png" style={{width:"100%",}} alt="chevignon portada" />
+        <ImagenesDePortada/>
         <section>
           <ProductList
             allProducts={allProducts}
