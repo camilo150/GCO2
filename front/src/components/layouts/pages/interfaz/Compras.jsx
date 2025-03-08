@@ -1,12 +1,13 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import Swal from "sweetalert2";
+import '../../../../Styles/Compras.css'
 
 const Compras = () => {
     let redireccionCasa = useNavigate()
     const comprar = () => {
         Swal.fire({
-            title: "Está seguro de querer comprar?",
+            title: "Está seguro de desea comprar?",
             text: "No hay reembolso!",
             icon: "warning",
             showCancelButton: true,
@@ -34,13 +35,16 @@ const Compras = () => {
     }
     return (
         <div>
+
             <div className='body-compras'></div>
             <section className='contenedor-compras' >
                 <h1 className='comprar-anuncio'>Vamos, estás a un solo paso para terminar!</h1>
+
                 <form className='formulario-compra'>
                     <img src="src/assets/img/Portadas/american_express_platinum_card.avif" className='imagen-compra' alt="" />
-                    <label htmlFor="" className=''>Numero de la tarjeta</label>
-                    <input type="number" maxLength="16" className='input-compras-a'
+
+                    <label htmlFor="" className='label-formulario'>Numero de la tarjeta</label>
+                    <input type="number" maxLength="16" className='input-compras-a' placeholder=' XXXX  XXXX  XXXX  XXXX'
                         onInput={(e) => {
 
                             if (e.target.value.length > 16) {
@@ -51,8 +55,8 @@ const Compras = () => {
                             }
                         }}
                     />
-
-                    <input type="text" maxLength="20" className='input-compras-a' placeholder='  Nombre del propietario'
+                    <label htmlFor="" className='label-formulario'>Nombre del propietario</label>
+                    <input type="text" maxLength="20" className='input-compras-a' placeholder=' Nombre completo'
                         onInput={(e) => {
                             if (e.target.value.length > 20) {
                                 e.target.value = e.target.value.slice(0, 20);
@@ -60,12 +64,16 @@ const Compras = () => {
                             if (!/^[a-zA-Z\s]*$/.test(e.target.value)) {
                                 e.target.value = '';
                             }
-                        }}
-                    />
+                        }} />
+                    <section className='contenedor-label-formulario-b'>
+                        <label htmlFor="" className='label-formulario-b' >Fecha de expiracion</label>
+                        <label htmlFor="" className='label-formulario-b'>Codigo de seguridad</label>
+                    </section>
                     <section className='contenedor-inputs-b'>
                         <input type="month" name="" id="" className='input-compras-b' />
+
                         <input
-                            type="number" maxLength="3" className='input-compras-b' placeholder='   CVC'
+                            type="number" maxLength="3" className='input-compras-b' placeholder=' CVC'
                             onInput={(e) => {
                                 if (e.target.value.length > 3) {
                                     e.target.value = e.target.value.slice(0, 3);
@@ -73,8 +81,7 @@ const Compras = () => {
                                 if (isNaN(e.target.value)) {
                                     e.target.value = '';
                                 }
-                            }}
-                        />
+                            }} />
                     </section>
                     <input type="button" name="" id="" className='boton-compra' value={"Comprar"} onClick={comprar} />
                 </form>
