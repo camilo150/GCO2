@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import ChevignonWalper from "../../../../assets/img/Portadas/chevignonPresentacion.png"
+import ChevignonWalper from "../../../../assets/img/Portadas/Chevignon_P.png"
 import AmericaninoWalper from "../../../../assets/img/Portadas/AMERICANINO_Walper.png"
 import MothercareWalper from "../../../../assets/img/Portadas/mothercareWalper.jpg"
-import NafnafWalper from "../../../../assets/img/Portadas/naf_naf_inicio.png"
+import NafnafWalper from "../../../../assets/img/Portadas/Chevignon_P.png"
 
 const Carrusel = () => {
   const [currentImage, setCurrentImage] = useState(0);

@@ -5,6 +5,7 @@ import Head from "../interfaz/Head";
 import { Cabezon } from '../interfaz/Cabezon';
 import { data } from '../../../database/data';
 import { ProductList } from '../interfaz/ProductList';
+import ImagenesDePortada from '../interfaz/ImagenesDePortada';
 
 function Nafnaf() {
   const [allProducts, setAllProducts] = useState([]);
@@ -20,10 +21,7 @@ function Nafnaf() {
 
   return (
     <>
-      <header className="cabezaNafnaf">
-        <Link className="logoNafnaf" to="/home">
-          <h1>GCO</h1>
-        </Link>
+      <header>
         <Cabezon
           allProducts={allProducts}
           setAllProducts={setAllProducts}
@@ -35,8 +33,8 @@ function Nafnaf() {
       </header>
       <Head />
       <main style={{ backgroundImage: "linear-gradient(0deg, #b8b8b8 0%, #182848 50%)"}}>
-        <img style={{ width: "100%", marginTop: "10%" }} src="src/assets/img/Portadas/naf_naf_inicio.png" alt="" />
-        <section>
+        <ImagenesDePortada></ImagenesDePortada>
+         <section>
           <ProductList
             allProducts={allProducts}
             setAllProducts={setAllProducts}

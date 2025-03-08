@@ -5,6 +5,7 @@ import Head from "../interfaz/Head";
 import { ProductList } from '../interfaz/ProductList';
 import { Cabezon } from '../interfaz/Cabezon';
 import { data } from '../../../database/data';
+import ImagenesDePortada from '../interfaz/ImagenesDePortada';
 
 function Americanino() {
   const [allProducts, setAllProducts] = useState([]);
@@ -18,10 +19,6 @@ function Americanino() {
   }, []); 
   return (
     <>
-      <header className="cabezaAmericanino">
-        <Link className="logoAmericanino" to="/home">
-          <h1>GCO</h1> 
-        </Link>
         <Cabezon
           allProducts={allProducts}
           setAllProducts={setAllProducts}
@@ -30,10 +27,9 @@ function Americanino() {
           countProducts={countProducts}
           setCountProducts={setCountProducts}
         />
-      </header>
       <main id='main' style={{backgroundImage: 'linear-gradient(0deg, #5d6a7d 9%, rgba(28, 61, 126, 0.96) 49%)',border:"soild 2px black"}}>
         <Head />
-        <img style={{ width: "100%", marginTop: "9.5%" ,borderBottom:"solid 4px black",borderTop:"solid 5px"}} src="src/assets/img/Portadas/americaninoPortada.png" alt="" />
+        <ImagenesDePortada></ImagenesDePortada>
         <ProductList
           allProducts={allProducts}
           setAllProducts={setAllProducts}
