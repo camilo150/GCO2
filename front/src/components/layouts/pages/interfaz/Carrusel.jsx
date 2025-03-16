@@ -9,10 +9,10 @@ const Carrusel = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
   const images = [
-    { src: AmericaninoWalper, route: '/Filtro-Americanino' },
-    { src: ChevignonWalper, route: '/Filtro-Chevignon  ' },
-    { src: MothercareWalper, route: '/Filtro-MotherCare' },
-    { src: NafnafWalper, route: '/Filtro-NafNaf' }
+    { src: AmericaninoWalper, route: '/Americanino' },
+    { src: ChevignonWalper, route: '/Chevignon'},
+    { src: MothercareWalper, route: '/Mothercare' },
+    { src: NafnafWalper, route: '/NafNaf' }
   ];
 
   useEffect(() => {

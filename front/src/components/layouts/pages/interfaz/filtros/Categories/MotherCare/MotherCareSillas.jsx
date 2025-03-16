@@ -4,6 +4,7 @@ import Foother from "../../../../interfaz/Foother";
 import Head from "../../../../interfaz/Head";
 import { Cabezon } from '../../../Cabezon';
 import { FiltroDeRopas } from '../../FiltroDeRopas';
+import Mothercare_P from '../../../../../../../assets/img/Portadas/MotherCare_P.jpg';
 
 function MothercareSillas() {
   const [allProducts, setAllProducts] = useState([]);
@@ -12,28 +13,35 @@ function MothercareSillas() {
   const [ MothercareSillasProducts] = useState([]);
   return (
     <>
-        <Cabezon
-          allProducts={allProducts}
-          setAllProducts={setAllProducts}
-          total={total}
-          setTotal={setTotal}
-          countProducts={countProducts}
-          setCountProducts={setCountProducts}
-        />
+    <section style={{
+      backgroundImage: "linear-gradient(90deg, #c2e9fb 1%, #a1c4fd 100%)",
+      backgroundPosition: 'center center',  // Corregido
+      backgroundRepeat: 'no-repeat',        // Corregido
+      backgroundSize: 'cover',              // Corregido
+      backgroundAttachment: 'fixed'         // Corregido
+    }}>
+      <Cabezon
+        allProducts={allProducts}
+        setAllProducts={setAllProducts}
+        total={total}
+        setTotal={setTotal}
+        countProducts={countProducts}
+        setCountProducts={setCountProducts}
+      />
+      <img src={Mothercare_P} className='Imagenes_P' alt="" />
       <Head />
-      <main id='main' style={{backgroundImage:"linear-gradient(90deg, #c2e9fb 1%, #a1c4fd 100%)"}}>
-          <FiltroDeRopas
-            allProducts={allProducts}
-            setAllProducts={setAllProducts}
-            total={total}
-            setTotal={setTotal}
-            countProducts={countProducts}
-            setCountProducts={setCountProducts}
-            data={MothercareSillasProducts} // Pasa los productos de Mothercare como prop
-          /> 
-      </main>
+      <FiltroDeRopas
+        allProducts={allProducts}
+        setAllProducts={setAllProducts}
+        total={total}
+        setTotal={setTotal}
+        countProducts={countProducts}
+        setCountProducts={setCountProducts}
+        data={MothercareSillasProducts} // Pasa los productos de Mothercare como prop
+      />
       <Foother />
-    </>
+    </section>
+  </>
   );
 }
 

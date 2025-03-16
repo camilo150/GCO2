@@ -6,6 +6,7 @@ import { Cabezon } from '../interfaz/Cabezon';
 import { data } from '../../../database/data';
 import { ProductList } from '../interfaz/ProductList';
 import ImagenesDePortada from '../interfaz/ImagenesDePortada';
+import NabBarN from '../interfaz/filtros/NabBars/NabBarN';
 
 function Nafnaf() {
   const [allProducts, setAllProducts] = useState([]);
@@ -21,7 +22,13 @@ function Nafnaf() {
 
   return (
     <>
-      <header>
+      <section style={{
+        backgroundImage: "linear-gradient(0deg, #b8b8b8 0%, #182848 50%)",
+        backgroundPosition: 'center center',  // Corregido
+        backgroundRepeat: 'no-repeat',        // Corregido
+        backgroundSize: 'cover',              // Corregido
+        backgroundAttachment: 'fixed'         // Corregido
+      }}>
         <Cabezon
           allProducts={allProducts}
           setAllProducts={setAllProducts}
@@ -30,11 +37,9 @@ function Nafnaf() {
           countProducts={countProducts}
           setCountProducts={setCountProducts}
         />
-      </header>
-      <Head />
-      <main style={{ backgroundImage: "linear-gradient(0deg, #b8b8b8 0%, #182848 50%)"}}>
+        <Head />
         <ImagenesDePortada></ImagenesDePortada>
-         <section>
+        <NabBarN></NabBarN>
           <ProductList
             allProducts={allProducts}
             setAllProducts={setAllProducts}
@@ -42,11 +47,10 @@ function Nafnaf() {
             setTotal={setTotal}
             countProducts={countProducts}
             setCountProducts={setCountProducts}
-            data={nafnafProducts} 
-          /> 
-        </section>
-      </main>
-      <Foother />
+            data={nafnafProducts}
+          />
+        <Foother />
+      </section>
     </>
   );
 }
