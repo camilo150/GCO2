@@ -6,6 +6,7 @@ import { ProductList } from '../interfaz/ProductList';
 import { Cabezon } from '../interfaz/Cabezon';
 import { data } from '../../../database/data';
 import ImagenesDePortada from '../interfaz/ImagenesDePortada';
+import NabBarA from '../interfaz/filtros/NabBars/NabBarA';
 
 function Americanino() {
   const [allProducts, setAllProducts] = useState([]);
@@ -16,9 +17,16 @@ function Americanino() {
   useEffect(() => {
     const filteredProducts = data.filter(product => product.marca === 'Americanino');
     setAmericaninoProducts(filteredProducts);
-  }, []); 
+  }, []);
   return (
     <>
+      <section style={{
+        backgroundImage: 'linear-gradient(0deg, #5d6a7d 9%, rgba(28, 61, 126, 0.96) 49%)',
+        backgroundPosition: 'center center', 
+        backgroundRepeat: 'no-repeat',       
+        backgroundSize: 'cover',             
+        backgroundAttachment: 'fixed'        
+      }}>
         <Cabezon
           allProducts={allProducts}
           setAllProducts={setAllProducts}
@@ -27,9 +35,9 @@ function Americanino() {
           countProducts={countProducts}
           setCountProducts={setCountProducts}
         />
-      <main id='main' style={{backgroundImage: 'linear-gradient(0deg, #5d6a7d 9%, rgba(28, 61, 126, 0.96) 49%)',border:"soild 2px black"}}>
         <Head />
         <ImagenesDePortada></ImagenesDePortada>
+        <NabBarA></NabBarA>
         <ProductList
           allProducts={allProducts}
           setAllProducts={setAllProducts}
@@ -39,8 +47,8 @@ function Americanino() {
           setCountProducts={setCountProducts}
           data={americaninoProducts} // Pasa los productos de Americanino como prop
         />
-      </main>
-      <Foother />
+        <Foother />
+      </section>
     </>
   );
 }

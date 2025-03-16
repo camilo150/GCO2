@@ -3,6 +3,8 @@ import Foother from "../../../../interfaz/Foother";
 import Head from "../../../../interfaz/Head";
 import { Cabezon } from '../../../Cabezon';
 import { FiltroDeRopas } from '../../FiltroDeRopas';
+import Americanino_P from "../../../../../../../assets/img/Portadas/Americanino_P.png"
+
 
 function AmericaninoCamisa() {
   const [allProducts, setAllProducts] = useState([]);
@@ -11,6 +13,13 @@ function AmericaninoCamisa() {
   const [americaninoCamisaProducts, ] = useState([]);
   return (
     <>
+    <section style={{
+        backgroundImage: 'linear-gradient(0deg, #5d6a7d 9%, rgba(28, 61, 126, 0.96) 49%)',
+        backgroundPosition: 'center center', 
+        backgroundRepeat: 'no-repeat',       
+        backgroundSize: 'cover',             
+        backgroundAttachment: 'fixed'        
+      }}>
         <Cabezon
           allProducts={allProducts}
           setAllProducts={setAllProducts}
@@ -19,9 +28,8 @@ function AmericaninoCamisa() {
           countProducts={countProducts}
           setCountProducts={setCountProducts}
         />
-      <main id='main' style={{backgroundImage: 'linear-gradient(0deg, #5d6a7d 9%, rgba(28, 61, 126, 0.96) 49%)',border:"soild 2px black"}}>
-         <Head />
-         
+       <Head />
+         <img src={Americanino_P} className='Imagenes_P' alt="" />
          <FiltroDeRopas
             allProducts={allProducts}
             setAllProducts={setAllProducts}
@@ -31,8 +39,8 @@ function AmericaninoCamisa() {
             setCountProducts={setCountProducts}
             data={americaninoCamisaProducts}
           />
-        </main>
       <Foother />
+      </section>
     </>
   );
 }

@@ -4,10 +4,6 @@ import Mothercare from './components/layouts/pages/marcas/Mothercare'
 import Chevignon from './components/layouts/pages/marcas/Chevignon'
 import Nafnaf from './components/layouts/pages/marcas/Nafnaf'
 import Americanino from './components/layouts/pages/marcas/Americanino'
-import FiltroAmerocanino from './components/layouts/pages/interfaz/filtros/FiltroAmerocanino'
-import FiltroMotherCare from './components/layouts/pages/interfaz/filtros/FiltroMotherCare'
-import FiltroNafNaf from './components/layouts/pages/interfaz/filtros/FiltroNafNaf'
-import FiltroChevignon from './components/layouts/pages/interfaz/filtros/FiltroChevignon'
 import AmericaninoCamisas from './components/layouts/pages/interfaz/filtros/Categories/Americanino/AmericaninoCamisas'
 import AmericaninoCamisetas from './components/layouts/pages/interfaz/filtros/Categories/Americanino/AmericaninoCamisetas'
 import AmericaninoGorras from './components/layouts/pages/interfaz/filtros/Categories/Americanino/AmericaninoGorras'
@@ -58,22 +54,6 @@ let router = createBrowserRouter([
   {
     path: "/Americanino",
     element: <Americanino />,
-  },
-  {
-    path: "/Filtro-Americanino",
-    element: <FiltroAmerocanino />,
-  },
-  {
-    path: "/Filtro-MotherCare",
-    element: <FiltroMotherCare />,
-  },
-  {
-    path: "/Filtro-NafNaf",
-    element: <FiltroNafNaf />,
-  },
-  {
-    path: "/Filtro-Chevignon",
-    element: <FiltroChevignon />,
   },
   {
     path: "Americanino-camisa",

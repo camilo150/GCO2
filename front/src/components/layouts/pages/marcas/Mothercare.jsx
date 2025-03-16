@@ -6,6 +6,7 @@ import { Cabezon } from '../interfaz/Cabezon';
 import { ProductList } from '../interfaz/ProductList';
 import Head from '../interfaz/Head';
 import ImagenesDePortada from '../interfaz/ImagenesDePortada';
+import NabBarM from '../interfaz/filtros/NabBars/NabBarM';
 
 function Mothercare() {
   const [allProducts, setAllProducts] = useState([]);
@@ -16,10 +17,16 @@ function Mothercare() {
   useEffect(() => {
     const filteredProducts = data.filter(product => product.marca === 'Mothercare');
     setMothercareProducts(filteredProducts);
-  }, []); 
+  }, []);
   return (
     <>
-      <header>
+      <section style={{
+        backgroundImage: "linear-gradient(90deg, #c2e9fb 1%, #a1c4fd 100%)",
+        backgroundPosition: 'center center',  // Corregido
+        backgroundRepeat: 'no-repeat',        // Corregido
+        backgroundSize: 'cover',              // Corregido
+        backgroundAttachment: 'fixed'         // Corregido
+      }}>
         <Cabezon
           allProducts={allProducts}
           setAllProducts={setAllProducts}
@@ -28,20 +35,19 @@ function Mothercare() {
           countProducts={countProducts}
           setCountProducts={setCountProducts}
         />
-      </header>
-      <Head />
-      <main id='main' style={{backgroundImage:"linear-gradient(90deg, #c2e9fb 1%, #a1c4fd 100%)"}}>
+        <Head />
           <ImagenesDePortada></ImagenesDePortada>
-           <ProductList
+          <NabBarM></NabBarM>
+          <ProductList
             allProducts={allProducts}
             setAllProducts={setAllProducts}
             total={total}
             setTotal={setTotal}
             countProducts={countProducts}
             setCountProducts={setCountProducts}
-            data={mothercareProducts} /> 
-      </main>
-      <Foother />
+            data={mothercareProducts} />
+        <Foother />
+      </section>
     </>
   );
 }

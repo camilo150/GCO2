@@ -1,55 +1,50 @@
 // ProductItem.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "../../../../../../Styles/filtro_ropa.css"
 
 const product = [
     {
+        id: 1,
         nameProduct: 'Abrigos',
-        imageUrl: "src/assets/img/prendas_nafnaf/abrigo_azul_claro_mujer_nafna.png",
         link: "/NafNaf-abrigo"
     },
     {
+        id: 2,
         nameProduct: 'Camisas',
-        imageUrl: 'src/assets/img/prendas_nafnaf/camisas_blanca_mujer_nafnaf.png',
         link: "/NafNaf-camisa"
     },
     {
+        id: 3,
         nameProduct: 'Camisetas',
-        imageUrl: 'src/assets/img/prendas_nafnaf/camiseta_negra_mujer_nafnaf.png',
         link: "/NafNaf-camiseta"
     },
     {
+        id: 4,
         nameProduct: "Enterizos",
-        imageUrl: "src/assets/img/prendas_nafnaf/enterizo_cafe_mujer_nafnaf.png",
         link: "/NafNaf-enterizo"
     },
     {
+        id: 5,
         nameProduct: "Pantalones",
-        imageUrl: "src/assets/img/prendas_nafnaf/pantalon_acampanado_azul_mujer_nafnaf.png",
         link: "/NafNaf-pantalon"
     },
     {
+        id: 6,
         nameProduct: "Zapatos",
-        imageUrl: "src/assets/img/prendas_nafnaf/zapato_beige_nafnaf.png",
         link: "/NafNaf-zapato"
     }
 ]
 
-const NabBarN = ({ imageUrl }) => {
+const NabBarN = () => {
     return (
-        <section style={{ marginTop: "10%" }}>
-            <div className='container-items' >
+        <section>
+            <div className='container-items-filtro'>
                 {product.map(product => (
-                    <div className='item' key={product.marca}>
-                        <figure>
-                            <img src={product.imageUrl} alt={product.nameProduct} />
-                        </figure>
-                        <div className='info-product'>
-                            <h2>{product.nameProduct}</h2>
-                            <Link to={product.link} className='linkIicioImagen' >
-                                <button>VER MAS</button>
-                            </Link>
-                        </div>
+                    <div className='item-filtro' key={product.id}>
+                        <Link to={product.link}>
+                            <button className='boton-filtro'>{product.nameProduct}</button>
+                        </Link>
                     </div>
                 ))}
             </div>

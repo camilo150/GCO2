@@ -3,6 +3,9 @@ import Foother from "../../../../interfaz/Foother";
 import Head from "../../../../interfaz/Head";
 import { Cabezon } from '../../../Cabezon';
 import { FiltroDeRopas } from '../../FiltroDeRopas';
+import Chevignon_P from "../../../../../../../assets/img/Portadas/Chevignon_P.png"
+
+
 
 function ChevignonCamisas() {
   const [allProducts, setAllProducts] = useState([]);
@@ -11,7 +14,13 @@ function ChevignonCamisas() {
   const [ChevignonCamisasProducts, ] = useState([]);
   return (
     <>
-     
+      <section style={{
+        backgroundImage: 'linear-gradient(0deg, rgba(9, 8, 8, 0.83) 0%, #d0cfcf 77%)',
+        backgroundPosition: 'center center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundAttachment: 'fixed'
+      }}>
         <Cabezon
           allProducts={allProducts}
           setAllProducts={setAllProducts}
@@ -21,8 +30,8 @@ function ChevignonCamisas() {
           setCountProducts={setCountProducts}
         />
       <Head />
-      <main id='main'style={{backgroundImage: 'linear-gradient(0deg, rgba(9, 8, 8, 0.83) 0%, #d0cfcf 77%)',}}>
-        <section className="Ropas">
+      <img src={Chevignon_P} className='Imagenes_P' alt="" />
+       <section className="Ropas">
           <FiltroDeRopas
             allProducts={allProducts}
             setAllProducts={setAllProducts}
@@ -33,8 +42,8 @@ function ChevignonCamisas() {
             data={ChevignonCamisasProducts} // Pasa los productos de Chevignon como prop
           /> 
         </section>
-      </main>
       <Foother />
+      </section>
     </>
   );
 }

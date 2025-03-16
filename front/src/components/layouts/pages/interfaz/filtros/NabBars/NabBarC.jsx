@@ -1,45 +1,40 @@
 // ProductItem.js
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "../../../../../../Styles/filtro_ropa.css"
 
 const product = [
     {
+        id: 1,
         nameProduct: 'Buzos',
-        imageUrl: "src/assets/img/prendas_Chevignon/buzo_Amarillo_Chevignon.jpeg",
         link: "/Chevignon-buzo"
     },
     {
+        id: 2,
         nameProduct: 'Camisa',
-        imageUrl: 'src/assets/img/prendas_Chevignon/camisa_negro_gris.jpg',
         link: "/Chevignon-camisa"
     },
     {
+        id: 3,
         nameProduct: 'Chaquetas',
-        imageUrl: 'src/assets/img/prendas_Chevignon/chaqueta_Chevignon.jpg',
         link: "/Chevignon-chaqueta"
     },
     {
+        id: 4,
         nameProduct: "Pantalones",
-        imageUrl: "src/assets/img/prendas_Chevignon/jean_AzulClaro_chevignon.jpg",
         link: "/Chevignon-pantalon"
-    },
+    }
 ]
 
-const NabBarC = ({ imageUrl }) => {
+const NabBarC = () => {
     return (
-        <section style={{ marginTop: "10%" }}>
-            <div className='container-items'>
+        <section>
+            <div className='container-items-filtro'>
                 {product.map(product => (
-                    <div className='item' key={product.marca}>
-                        <figure>
-                            <img src={product.imageUrl} alt={product.nameProduct} />
-                        </figure>
-                        <div className='info-product'>
-                            <h2>{product.nameProduct}</h2>
-                            <Link to={product.link} className='linkIicioImagen' >
-                                <button>VER MAS</button>
-                            </Link>
-                        </div>
+                    <div className='item-filtro' key={product.id}>
+                        <Link to={product.link}>
+                            <button className='boton-filtro'>{product.nameProduct}</button>
+                        </Link>
                     </div>
                 ))}
             </div>

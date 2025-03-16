@@ -11,5 +11,4 @@ const GCOIcon = () => {
     </>
   )
 }
-
 export default GCOIcon
